@@ -55,7 +55,7 @@ main {
 
 .container {
   width: 100%;
-  max-width: 1158px;
+  max-width: 428px;
   padding: 0 15px 0 15px;
   margin: 0 auto;
 }
@@ -86,8 +86,8 @@ header {
   color: var(--navy-blue);
 }
 .header-menu {
-  display: flex;
-  gap: 40px;
+  display: none;
+  /* gap: 40px; */
 }
 .header-menu-link {
   padding: 24px 0;
@@ -119,8 +119,7 @@ header {
   font-style: normal;
 }
 .address-list {
-  display: flex;
-  gap: 40px;
+  display: none;
 }
 .address-list-link {
   font-size: 16px;
@@ -133,6 +132,11 @@ header {
   transition: color var(--transition);
 }
 
+.header-icon{
+  fill: var(--navy-blue-modal);
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
 /* --------main--------------- */
 
 /** hero---- */
