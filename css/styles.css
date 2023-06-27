@@ -66,6 +66,8 @@ header {
 }
 .header-container {
   display: flex;
+  justify-content: space-between;
+  padding: 24px 16px 22px 16px;
 }
 .header-nav {
   display: flex;
@@ -132,10 +134,15 @@ header {
   transition: color var(--transition);
 }
 
+.header-btn{
+  background-color: var(--white);
+  padding: 0;
+  border: none;
+}
 .header-icon{
-  fill: var(--navy-blue-modal);
-  padding-top: 24px;
-  padding-bottom: 24px;
+  fill: var(--navy-blue);
+  padding: 0;
+  border: none;
 }
 /* --------main--------------- */
 
@@ -198,7 +205,7 @@ header {
 
 /** points---- */
 .points {
-  padding: 120px 0;
+  padding: 96px 0;
 }
 .visually-hidden {
   position: absolute;
@@ -213,22 +220,29 @@ header {
   overflow: hidden;
 }
 .points-list {
-  display: flex;
-  gap: 24px;
+  display: block;
+  justify-content: center;
 }
-.points-list-item {
-  width: calc((100% - 72px) / 4);
+
+.points-list-item{
+  padding-bottom: 72px;
 }
+.points-list-item:last-child{
+  padding-bottom: 0;
+}
+
 .points-item-block {
   width: 264px;
   height: 112px;
   border-radius: 4px;
   background-color: var(--cloud);
   margin-bottom: 8px;
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
 }
+
+
 /* .points-list-item::before {
   content: "";
   display: block;
@@ -239,12 +253,16 @@ header {
   margin-bottom: 8px;
 } */
 .points-list-item-title {
-  font-weight: 500;
-  font-size: 20px;
+  font-weight: 700;
+  font-size: 36px;
   line-height: 1.2;
-  letter-spacing: 0.02em;
+  letter-spacing: 0.045em;
   color: var(--navy-blue);
   margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
 }
 .points-list-item-paragraph {
   font-size: 16px;
@@ -254,11 +272,14 @@ header {
 /** doing---- */
 .doing {
   padding-bottom: 120px;
+  display: none;
 }
+
 .doing-list {
   display: flex;
   gap: 24px;
 }
+
 .doing-list-item {
   width: calc((100% - 48px) / 3);
 }
@@ -272,11 +293,12 @@ header {
   margin: 0 auto;
   margin-bottom: 72px;
 }
+
 /** our team---- */
 .team {
   background-color: var(--cloud);
   margin: 0 auto;
-  padding: 120px 0;
+  padding: 96px 0;
 }
 
 .team-title {
@@ -290,20 +312,31 @@ header {
   margin-left: auto;
   margin-right: auto;
 }
+
 .team-list {
-  display: flex;
+  display: block;
   gap: 24px;
 }
+
 .team-list-item {
+  margin-bottom: 72px;
+  margin-left: 82px;
+  margin-right: 82px;
   background-color: var(--white);
-  width: calc((100% - 72px) / 4);
+  width: calc((100% - 72px) / 1.4);
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-.team-tex {
-  padding: 32px 0;
+
+.team-list-item:last-child {
+  margin-bottom: 0;
 }
+
+.team-tex {
+  padding: 32px 16px;
+}
+
 .team-subtitle {
   font-family: "Roboto";
   font-style: normal;
@@ -315,6 +348,7 @@ header {
   margin-bottom: 8px;
   text-align: center;
 }
+
 .team-paragraph {
   font-family: "Roboto";
   font-style: normal;
@@ -325,12 +359,14 @@ header {
   text-align: center;
   margin-bottom: 8px;
 }
+
 .team-list-soc {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 24px;
 }
+
 .team-soc-item {
   width: 40px;
   height: 40px;
@@ -346,12 +382,15 @@ header {
   border-radius: 50%;
   transition: background-color var(--transition);
 }
+
 .team-soc-link:hover {
   background-color: var(--ocean);
 }
+
 .team-soc-link:focus {
   background-color: var(--ocean);
 }
+
 .team-soc-icon {
   fill: var(--cloud);
 }
@@ -359,7 +398,7 @@ header {
 .customers {
   background-color: var(--white);
   margin: 0 auto;
-  padding: 120px 0;
+  padding: 96px 0;
 }
 .customers-title {
   font-size: 36px;
@@ -372,12 +411,20 @@ header {
   margin-left: auto;
   margin-right: auto;
 }
+
+
 .customers-list {
   display: flex;
-  gap: 24px;
+  gap: 72px 16px;
+  flex-wrap: wrap;
 }
+
+.customers-list:last-child {
+  padding-bottom: 0;
+}
+
 .customers-item {
-  width: calc((100% - 120px) / 6);
+  width: calc((100% - 16px) / 2);
   height: 88px;
 }
 .customers-link {
@@ -511,15 +558,21 @@ header {
 /* footer--------------------- */
 .footer {
   background-color: var(--navy-blue);
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  display: flex;
 }
 .footer-container {
   display: flex;
-  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 72px;
+  padding: 96px 15px;
+  justify-content: center;
 }
 .footer-logo-p {
-  margin-right: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .footer-logo {
   font-family: "Raleway", sans-serif;
@@ -530,8 +583,7 @@ header {
   text-transform: uppercase;
   color: var(--iris);
   display: flex;
-  margin-bottom: 16px;
-  display: inline-block;
+  margin-bottom: 17.5px;
 }
 .footer-logo-white {
   color: var(--cloud);
@@ -542,6 +594,9 @@ header {
   letter-spacing: 0.02em;
   color: var(--cloud);
   max-width: 264px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .footer-soc-paragraph {
   font-weight: 500;
@@ -550,13 +605,19 @@ header {
   letter-spacing: 0.02em;
   color: var(--white);
   margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .footer-soc-block {
-  margin-right: 80px;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  
 }
 .footer-list-soc {
-  display: flex;
   gap: 16px;
+  display: flex;
 }
 .footer-soc-item {
   width: 40px;
@@ -582,21 +643,29 @@ header {
 .footer-soc-icon {
   fill: var(--cloud);
 }
+
+.footer-form-container{
+}
 .footer-form {
-  display: flex;
+  display: block;
   gap: 24px;
 }
+
 .footer-modal-label {
-  display: block;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--white);
   margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+
 .footer-input {
-  width: 264px;
+  width: 398px;
   height: 40px;
   border: 1px solid var(--white);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -619,7 +688,17 @@ header {
   letter-spacing: 0.04em;
   color: var(--white);
 }
+.button-wrap{
+  width: 100%;
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 .footer-btn {
+  min-width: 165px;
+  height: 40px; 
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -634,6 +713,8 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 16px;
+
 }
 .footer-btn:is(:hover, :focus) {
   background: var(--ocean);

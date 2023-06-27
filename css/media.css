@@ -16,6 +16,7 @@
 @media screen and (min-width: 1158px){
     
     .container {
+        width: 100%;
         max-width: 1158px;
         padding: 0 15px 0 15px;
         }
@@ -27,14 +28,138 @@
         display: flex;
         gap: 40px;
     }
-    
-    .js-mobile-menu{
-        display: none;
+
+    .points {
+        padding: 120px 0;
     }
+    
+    .points-item-block {
+        display: flex;
+    }   
+
+    .points-list {
+        display: flex;
+        gap: 24px;
+    }
+
+    .points-list-item {
+        width: calc((100% - 72px) / 4);
+    }
+
+    .points-list-item-title {
+        text-transform: none;
+        font-size: 20px;
+        letter-spacing: 0.02em;
+    }
+
+    .doing {
+        padding-bottom: 120px;
+        display: flex;
+    }
+
+    .team {
+        background-color: var(--cloud);
+        margin: 0 auto;
+        padding: 120px 0;
+    }
+
+    .team-list{
+        display: flex;
+    }
+
+    .team-list-item {
+        width: calc((100% - 72px) / 4);
+        margin: 0;
+    }
+    
+    .customers {
+        padding: 120px 0;
+    }
+
+    .customers-item {
+        width: 168px;
+    }
+
+    .customers-list-list {
+        gap: 16px;
+        display: flex;
+        justify-content: center;
+    }
+    .footer {
+        background-color: var(--navy-blue);
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .footer-logo {
+        display: block;
+        margin-bottom: 16px;
+    }
+
+    .footer-logo-p {
+        margin-right: 120px;
+    }
+
+    .footer-container {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .footer-form {
+        display: flex;
+    }
+
+    .footer-soc-block {
+        margin-right: 80px;
+    }
+
+    .footer-modal-label {
+        display: block;
+    }
+
+    .footer-form-container{
+        margin-top: 0;
+    }
+
+    .footer-input {
+        width: 264px;
+    }
+
+    .footer-btn {
+        margin-top: 0;
+    }
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (min-width: 768px) and (max-width: 1157px){
     .container {
+        width: 100%;
         max-width: 768px;
         padding: 0 16px 0 16px;
     }
@@ -42,10 +167,6 @@
     .header-menu{
         display: flex;
         gap: 24px;
-    }
-
-    .js-mobile-menu{
-        display: none;
     }
 
     .address-list{
@@ -61,4 +182,82 @@
         padding-top: 0;
     }
 
+    .points-list{
+        display: flex;
+        gap: 72px 24px;
+    }
+
+    .points-list-item {
+        width: calc((100% - 24px) / 2);
+        max-width: unset;
+        text-align: left;
+    }
+
+    .points-list-item {
+        
+    }
+    .team-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+        
+    .team-list-item {
+        width: calc(50% - 10px);
+            /* Adjust the width and gap between items */
+        margin-bottom: 20px;
+        /* Adjust the vertical gap between rows */
+        }
+
+        .points-list-item {
+        padding-bottom: 64px;
+    }
+
+    .footer-logo {
+        display: block;
+        margin-bottom: 17.5px;
+    }
+    
+    .footer-logo-p {
+        margin-right: 24px;
+    }
+    
+    .footer-container {
+        display: block;
+    }
+    
+
+    .footer-soc-block{
+        
+    }
+    .footer-paragraph {
+        width: 264px;
+    }
+
+    .footer-form {
+        display: flex;
+    }
+    
+    .footer-soc-paragraph{
+        display: inline-flex;
+    }
+
+    .footer-soc-block {
+        margin: 0;
+    }
+    
+    .footer-list-soc{
+        justify-content: start;
+    }
+    .footer-modal-label {
+        display: block;
+    }
+    
+    .footer-form-container {
+        margin-top: 0;
+    }
+    
+    .footer-input {
+        width: 264px;
+    }
 }
