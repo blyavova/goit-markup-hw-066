@@ -29,6 +29,10 @@
         gap: 40px;
     }
 
+    .header-btn {
+        display: none;
+    }
+
     .points {
         padding: 120px 0;
     }
@@ -101,6 +105,8 @@
     }
 
     .footer-container {
+        flex-wrap: no-wrap;
+        gap: 0;
         display: flex;
         align-items: baseline;
     }
@@ -182,68 +188,81 @@
         padding-top: 0;
     }
 
+    .header-btn{
+        display: none;
+    }
+
     .points-list{
         display: flex;
         gap: 72px 24px;
+        flex-wrap: wrap;
     }
 
     .points-list-item {
-        width: calc((100% - 24px) / 2);
-        max-width: unset;
-        text-align: left;
+        width: 356px;
+        padding-bottom: 0;
     }
 
-    .points-list-item {
-        
+
+    .points-list-item-title{
+        justify-content: start;
     }
+
     .team-list {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        gap: 64px 24px;
+        justify-content: center;
     }
         
     .team-list-item {
-        width: calc(50% - 10px);
-            /* Adjust the width and gap between items */
-        margin-bottom: 20px;
-        /* Adjust the vertical gap between rows */
-        }
+        width: 256px;
+        margin: 0;
+        
+    }
 
-        .points-list-item {
-        padding-bottom: 64px;
+    .customers-list {
+        gap: 72px 24px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .customers-item {
+        width: 168px;
     }
 
     .footer-logo {
-        display: block;
-        margin-bottom: 17.5px;
+        display: flex;
     }
     
     .footer-logo-p {
         margin-right: 24px;
+        display: block;
     }
     
     .footer-container {
-        display: block;
+        display: flex;
+        gap: 72px 24px;
+        justify-content: center;
     }
     
 
     .footer-soc-block{
-        
+        display: flex;
+        margin: 0;
     }
     .footer-paragraph {
         width: 264px;
     }
 
-    .footer-form {
+    .footer-form{
         display: flex;
+        align-items: baseline;
+        gap: 24px;
     }
     
     .footer-soc-paragraph{
         display: inline-flex;
-    }
-
-    .footer-soc-block {
-        margin: 0;
     }
     
     .footer-list-soc{
@@ -254,7 +273,6 @@
     }
     
     .footer-form-container {
-        margin-top: 0;
     }
     
     .footer-input {
