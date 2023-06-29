@@ -99,6 +99,21 @@
         display: flex;
         justify-content: center;
     }
+
+    .portfolio-list{
+        display: flex;
+        gap: 24px;
+    }
+
+
+    .button-list{
+        justify-content: center;
+    }
+    
+    .portfolio-link{
+        width: calc((100% - 48px) / 3);
+    }
+
     .footer {
         background-color: var(--navy-blue);
         padding-top: 100px;
@@ -256,6 +271,17 @@
         width: 168px;
     }
 
+    .button-list{
+        justify-content: center;
+    }
+
+    .portfolio-list{
+        gap: 72px 24px;
+    }
+
+    .portfolio-link{
+        width: 356px;
+    }
     .footer-logo {
         display: flex;
     }

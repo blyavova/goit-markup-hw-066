@@ -461,10 +461,12 @@ header {
 /** button list--- */
 .button-list {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
-  gap: 24px;
-  margin-bottom: 72px;
+  flex-wrap: wrap;
+  gap: 16px 24px;
+  /* margin-bottom: 72px; */
+  margin-bottom: 48px;
 }
 .button-list-item {
   font-family: "Roboto", sans-serif;
@@ -491,10 +493,10 @@ header {
   display: flex;
   column-gap: 24px;
   row-gap: 48px;
-  flex-wrap: wrap;
+  flex-wrap: wrap; 
 }
 .portfolio-link {
-  width: calc((100% - 48px) / 3);
+  width: 396px;
   padding-left: 0;
   transition: box-shadow var(--transition);
 }
