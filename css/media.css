@@ -33,6 +33,16 @@
         display: none;
     }
 
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+            url(../images/people-office-2x.jpg);
+    }
+}
     .points {
         padding: 120px 0;
     }
@@ -191,7 +201,22 @@
     .header-btn{
         display: none;
     }
+    .hero-title {
+        margin-bottom: 36px;
+        font-size: 56px;
+        line-height: 1.07;
+        max-width: 496px;
+    }
 
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {}
+
+    .hero {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+        url(../images/hero-bg-tablet-2x.jpg);
+    }
     .points-list{
         display: flex;
         gap: 72px 24px;
@@ -278,4 +303,6 @@
     .footer-input {
         width: 264px;
     }
+
+    .footer-modal-label{}
 }
